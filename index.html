@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Weather App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body><main>
+<header><p class="eyebrow">CITY WEATHER</p><h1>Weather App</h1><p>Look up the current weather by city.</p></header>
+<form id="search">
+<label for="city">City name</label>
+<div class="search"><input id="city" name="city" placeholder="e.g. Berlin" required><button>Search</button></div>
+</form>
+<p id="status" role="status">Enter a city to get its current weather.</p>
+<section aria-labelledby="place" hidden>
+<div class="weather-pictures">
+<div class="picture sun" id="sun" hidden><span role="img" aria-label="Sunny">☀️</span></div>
+<div class="picture rain" id="rain" hidden><span role="img" aria-label="Rainy">🌧️</span></div>
+<div class="picture cloud" id="cloud"><span role="img" aria-label="Cloudy">☁️</span></div>
+</div>
+<p class="eyebrow">CURRENT WEATHER</p>
+<h2 id="place"></h2>
+<p id="temperature"></p>
+<p id="conditions"></p>
+<p class="theme-note">Illustration selected by weather condition.</p></section>
+<p>Weather data by <a href="https://open-meteo.com/">Open-Meteo</a>.</p>
+</main><script src="app.js"></script></body></html>
